@@ -44,16 +44,6 @@ An AI-based system that automates the evaluation of handwritten student answersh
 
 ---
 
-📂 Project Structure
-
-.
-├── pipeline.py                # Main script: PDF → text + diagram extraction
-├── model_answer_generator.py # Generates AI model answers (optional)
-├── scoring_module.py         # Computes similarity-based scores
-├── output/                   # Extracted page images and diagrams
-├── sample_answersheet.pdf    # Example input file
-├── requirements.txt          # All dependencies
-├── templates/                # (If using Flask/Streamlit)
-├── static/                   # (CSS/JS assets if any)
+<pre> ```plaintext 📂 Project Structure . ├── pipeline.py # Main script: PDF → text + diagram extraction ├── model_answer_generator.py # Generates AI model answers (optional) ├── scoring_module.py # Computes similarity-based scores ├── output/ # Extracted page images and diagrams ├── sample_answersheet.pdf # Example input file ├── requirements.txt # All dependencies ├── templates/ # (If using Flask/Streamlit) ├── static/ # (CSS/JS assets if any) ``` </pre>
 
 
