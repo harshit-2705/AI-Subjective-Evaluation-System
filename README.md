@@ -1,4 +1,4 @@
-# AI Subjective Answer Evaluation
+# AI Subjective Answer Evaluation System
 
 Scorify is an AI-based system that automates evaluation of handwritten or typed subjective answers. It extracts text from scanned PDFs/images, compares it with model answers using NLP and semantic similarity, and scores responses in real time — ensuring faster, fairer, and more consistent grading.
 
