@@ -11,21 +11,25 @@ To build an end-to-end system that:
 - Scores them based on relevance, clarity, and structure
 - Displays results via a web dashboard or API
 
-## 🚀 Features
+## 🚀 Features & Workflow
 
-- 📄 Upload scanned PDFs or images
-- 👁 OCR using Tesseract + OpenCV preprocessing
-- 🧬 Model answer generation (GPT/T5) or manual upload
-- 🔍 Semantic scoring with SentenceTransformers
-- 📊 Dashboard (WIP) with per-question analytics
-- ⚙ FastAPI backend for processing and results
+- 📄 Upload scanned PDFs or handwritten answer images
+- 👁 Extracts handwritten text using **TrOCR** with OpenCV-based preprocessing
+- 🧬 Generates or accepts model answers (via **GPT**, **T5**, or manual input)
+- 🔍 Scores student answers using **semantic similarity** (BERT/SentenceTransformers)
+- 🖼 Detects and analyzes diagrams using **OpenCV**
+- ⚙ Processes all answersheets through a modular **FastAPI** backend
+- 📊 Displays real-time feedback (WIP) with per-question analytics using **Streamlit**
+- 🧱 Supports end-to-end **PDF processing pipeline**
+- 🔄 Modular design for easy extension or integration into other systems
+
 
 ## 🧰 Tech Stack
 
-- Python, FastAPI, Streamlit (UI)
-- Tesseract OCR, OpenCV
-- HuggingFace Transformers, SentenceTransformers
-- pdf2image, Pillow
+- **Languages & Frameworks**: Python, FastAPI, Streamlit
+- **OCR & Image Processing**: TrOCR, Tesseract OCR, OpenCV, pdf2image, Pillow
+- **NLP & AI Models**: Hugging Face Transformers, SentenceTransformers
+
 
 ## ✅ Current Progress
 
@@ -38,3 +42,6 @@ To build an end-to-end system that:
 ## 🏗 Architecture
 
 Upload → Convert → OCR → Clean → Embed → Compare → Score → View
+
+
+
