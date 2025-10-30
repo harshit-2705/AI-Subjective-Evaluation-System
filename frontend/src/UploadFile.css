@@ -1,0 +1,182 @@
+/* --- Global Styles --- */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background: #f0f2f5;
+color: #333;
+min-height: 100vh;
+}
+
+/* --- Layout Wrappers --- */
+.main-content-wrapper {
+display: flex;
+justify-content: center;
+gap: 2rem;
+padding: 2rem;
+max-width: 1400px;
+margin: auto;
+}
+
+.input-column {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+max-width: 700px;
+}
+
+/* --- Main Container Styling --- */
+.upload-container,
+.text-editor-section {
+padding: 2rem;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+align-items: stretch;
+}
+
+.upload-title,
+.text-editor-title {
+font-size: 1.6rem;
+color: #2c3e50;
+text-align: center;
+letter-spacing: 0.5px;
+border-bottom: 2px solid #3498db;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+}
+
+/* --- Button Styling --- */
+.button-group,
+.editor-buttons {
+display: flex;
+justify-content: center;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.glow-button {
+padding: 0.8rem 1.5rem;
+flex: 1;
+min-width: 180px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+background: #3498db;
+border: none;
+border-radius: 8px;
+letter-spacing: 0.05rem;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.glow-button:hover:not(:disabled) {
+background: #2980b9;
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.glow-button:disabled {
+background: #bdc3c7;
+cursor: not-allowed;
+box-shadow: none;
+}
+
+.file-label input[type="file"], .hidden-input {
+display: none;
+}
+
+.selected-file {
+text-align: center;
+color: #555;
+font-size: 0.9rem;
+margin-top: -0.5rem;
+}
+
+/* --- Text Editor --- */
+.text-editor-area {
+width: 100%;
+min-height: 400px;
+/* padding: 1.5rem; */
+border: 2px solid #ccc;
+border-radius: 8px;
+font-size: 1rem;
+line-height: 1.6;
+resize: vertical;
+background: #f8f9fa;
+color: #444;
+transition: border-color 0.3s;
+}
+
+.text-editor-area:focus {
+outline: none;
+border-color: #3498db;
+}
+
+.scroll-hint {
+text-align: center;
+font-style: italic;
+font-size: 0.85rem;
+color: #7f8c8d;
+}
+
+/* --- Status Messages --- */
+.status-message {
+text-align: center;
+font-size: 0.95rem;
+font-weight: 500;
+padding: 0.75rem;
+border-radius: 8px;
+margin-top: 1rem;
+}
+
+.success {
+background: #e6f7e6;
+color: #27ae60;
+}
+
+.error {
+background: #fde8e8;
+color: #e74c3c;
+}
+
+.pending {
+background: #fdf5e6;
+color: #f39c12;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+.main-content-wrapper {
+flex-direction: column;
+padding: 1rem;
+gap: 1.5rem;
+}
+}
+
+@media (max-width: 600px) {
+.upload-container,
+.text-editor-section {
+padding: 1rem;
+}
+.upload-title,
+.text-editor-title {
+font-size: 1.4rem;
+}
+.glow-button {
+width: 100%;
+min-width: auto;
+}
+.button-group {
+flex-direction: column;
+}
+}
